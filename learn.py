@@ -25,7 +25,13 @@ scores = cross_val_score(model, X, y, cv=kfold, scoring='accuracy')
 print(scores)
 
 model.fit(X, y)
-p
+
 # plot single tree
+# plot_tree(model)
+# plt.show()
+# plt.savefig("temp.pdf")
+
 plot_tree(model)
-plt.show()
+fig = plt.gcf()
+fig.set_size_inches(18.5, 10.5)
+plt.savefig("tree.pdf")
