@@ -1,4 +1,6 @@
 numpy
 xgboost
 sklearn
-numpy
+pandas
+matplotlib
+graphviz 
